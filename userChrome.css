@@ -1,0 +1,96 @@
+/* Firefox userChrome.css */
+/* about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* remove 'open all in tabs' option */
+.openintabs-menuseparator,
+.openintabs-menuitem,
+.bookmarks-actions-menuseparator {  
+  display: none !important; 
+}
+
+/* spacing between bookmarks in dropdown */
+#navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar) :-moz-any(menuitem.bookmark-item, menu.bookmark-item) {
+  height: 27px !important;
+  min-width: 150px !important;
+}
+
+/* tab title font size */
+#tabbrowser-tabs .tab-text{
+  font-size:12px !important;
+  font-weight: bold !important;
+  color: #F1F3F4 !important;
+ }
+
+ /* tab toolbar size */
+ #TabsToolbar { 
+  height: 36px !important; 
+}
+
+/* address bar */
+#navigator-toolbox {
+  font-size: 12px !important;
+}
+
+/* increase bookmarks toolbar padding */
+#PersonalToolbar {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;    
+}
+
+/* bookmark toolbar font size */
+#PlacesToolbarItems * {
+  fill: #F1F3F4 !important;
+  color: #F1F3F4 !important;
+  font-size: 12px !important;
+}
+
+/* bookmarks toolbar */
+#personal-bookmarks {
+  -moz-appearance: none !important;
+}
+#personal-bookmarks menupopup {
+  -moz-appearance: none !important;
+  background-color: #202124 !important;
+  fill: #F1F3F4 !important;
+  color: #F1F3F4 !important;
+  font-size: 12px !important;
+}
+#personal-bookmarks menu {
+  -moz-appearance: none !important;
+  fill: #F1F3F4 !important;
+  color: #F1F3F4 !important;
+  background-color: #202124 !important;
+}
+#personal-bookmarks menu:hover {
+  -moz-appearance: none !important;
+  fill: #F1F3F4 !important;
+  color: #F1F3F4 !important;
+  background-color: #4a4a4a !important;
+}
+#personal-bookmarks menuitem {
+  -moz-appearance: none !important;
+  color: #F1F3F4 !important;
+  background-color: #202124 !important;
+}
+#personal-bookmarks menuitem:hover {
+  -moz-appearance: none !important;
+  color: #F1F3F4 !important;
+  background-color: #4a4a4a !important;
+}
+
+/* sepatator color */
+#personal-bookmarks menuseparator {
+  -moz-appearance: none !important;
+  background-color: #4a4a4a !important;
+}
+
+/* bookmarks toolbar hover */
+#PlacesToolbar .bookmark-item:hover {
+  background-color: #4a4a4a !important;
+  color: #F1F3F4 !important;
+} 
+#personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item[open="true"] {
+  background-color: #4a4a4a !important;
+}

@@ -1,5 +1,6 @@
 /* Firefox userChrome.css */
 /* about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true */
+ /* use with 'compact' setting */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -19,13 +20,25 @@
 /* tab title font size */
 #tabbrowser-tabs .tab-text{
   font-size:12px !important;
-  font-weight: bold !important;
+  font-weight: normal !important;
   color: #F1F3F4 !important;
  }
+
+ /* tab size */
+ .tabbrowser-tab {
+  max-width: 235px !important;
+  height: 33px !important;
+}
 
  /* tab toolbar size */
  #TabsToolbar { 
   height: 36px !important; 
+}
+
+ /* tab toolbar blank space */
+.titlebar-spacer[type="pre-tabs"] {
+  border-inline-end: 0px !important;
+  width: 15px !important;
 }
 
 /* address bar */
@@ -33,10 +46,10 @@
   font-size: 12px !important;
 }
 
-/* increase bookmarks toolbar padding */
+/* bookmarks toolbar padding */
 #PersonalToolbar {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;    
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;    
 }
 
 /* bookmark toolbar font size */
@@ -80,17 +93,17 @@
   background-color: #4a4a4a !important;
 }
 
-/* sepatator color */
-#personal-bookmarks menuseparator {
-  -moz-appearance: none !important;
-  background-color: #4a4a4a !important;
-}
-
 /* bookmarks toolbar hover */
 #PlacesToolbar .bookmark-item:hover {
   background-color: #4a4a4a !important;
   color: #F1F3F4 !important;
 } 
 #personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item[open="true"] {
+  background-color: #4a4a4a !important;
+}
+
+/* sepatator color */
+#personal-bookmarks menuseparator {
+  -moz-appearance: none !important;
   background-color: #4a4a4a !important;
 }

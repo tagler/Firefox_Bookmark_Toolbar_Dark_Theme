@@ -1,6 +1,6 @@
 /* Firefox userChrome.css */
-/* about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true */
- /* use with 'compact' setting */
+/* must enable: about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true */
+/* note: use with 'compact' setting */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 

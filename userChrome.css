@@ -13,7 +13,7 @@
 
 /* spacing between bookmarks in dropdown */
 #navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar) :-moz-any(menuitem.bookmark-item, menu.bookmark-item) {
-  height: 27px !important;
+  height: 24px !important;
   min-width: 150px !important;
 }
 
@@ -24,39 +24,50 @@
   color: #F1F3F4 !important;
  }
 
+ /* tab style */
+ #tabbrowser-tabs {
+  --user-tab-rounding: 0px;
+}
+@media (-moz-proton) {
+  .tab-background {
+      border-radius: var(--user-tab-rounding) var(--user-tab-rounding) 0px 0px !important;
+      margin-block: 1px 0 !important;
+      color: #9a9aa8;
+  }
+  .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+      margin: 0px max(calc(var(--user-tab-rounding) - 3px), 0px) !important;
+  }
+}
+
  /* tab size */
  .tabbrowser-tab {
-  max-width: 235px !important;
-  height: 33px !important;
+  max-width: 240px !important;
+  height: 34px !important;
 }
 
- /* tab toolbar size */
- #TabsToolbar { 
-  height: 36px !important; 
+/* active tab color */
+.tab-background[selected="true"] {
+  background-color: #2B2A33 !important;
+  background-image: none !important;
 }
 
- /* tab toolbar blank space */
+/* tab toolbar blank space */
 .titlebar-spacer[type="pre-tabs"] {
   border-inline-end: 0px !important;
-  width: 15px !important;
-}
-
-/* address bar */
-#navigator-toolbox {
-  font-size: 12px !important;
+  width: 12px !important;
 }
 
 /* bookmarks toolbar padding */
 #PersonalToolbar {
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;    
+  padding-top: 3.5px !important;
+  padding-bottom: 3.5px !important;    
 }
 
 /* bookmark toolbar font size */
 #PlacesToolbarItems * {
   fill: #F1F3F4 !important;
   color: #F1F3F4 !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
 }
 
 /* bookmarks toolbar */
@@ -80,7 +91,7 @@
   -moz-appearance: none !important;
   fill: #F1F3F4 !important;
   color: #F1F3F4 !important;
-  background-color: #4a4a4a !important;
+  background-color: #52525E !important;
 }
 #personal-bookmarks menuitem {
   -moz-appearance: none !important;
@@ -90,20 +101,13 @@
 #personal-bookmarks menuitem:hover {
   -moz-appearance: none !important;
   color: #F1F3F4 !important;
-  background-color: #4a4a4a !important;
-}
-
-/* bookmarks toolbar hover */
-#PlacesToolbar .bookmark-item:hover {
-  background-color: #4a4a4a !important;
-  color: #F1F3F4 !important;
-} 
-#personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item[open="true"] {
-  background-color: #4a4a4a !important;
+  background-color: #52525E !important;
 }
 
 /* sepatator color */
 #personal-bookmarks menuseparator {
   -moz-appearance: none !important;
-  background-color: #4a4a4a !important;
+  background-color: #52525E !important;
 }
+
+#titlebar { margin-top: 0px !important; }

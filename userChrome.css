@@ -70,6 +70,27 @@
   font-size: 11px !important;
 }
 
+/* compact bookmark menu dropdown menu */
+menupopup[placespopup="true"]{
+  padding: 0 !important;
+  margin: 0 !important;
+  --arrowpanel-background: var(--menu-background-color) !important;
+  border-radius: var(--panel-border-radius) !important;
+}
+.menupopup-arrowscrollbox{
+  margin-top: 1px !important;
+  border: 1px solid var(--panel-border-color) !important;
+  padding: var(--panel-padding) !important;
+  border-radius: var(--panel-border-radius) !important;
+}
+:where(menupopup[placespopup="true"]) menu,
+:where(menupopup[placespopup="true"]) menuitem{
+  margin-inline: 0 !important;
+  padding-inline-start: 1em !important;
+  border-radius: 0 !important;
+  padding-block: 0.5em !important;
+}
+
 /* bookmarks toolbar */
 #personal-bookmarks {
   -moz-appearance: none !important;

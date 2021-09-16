@@ -59,7 +59,7 @@
 
 /* bookmarks toolbar padding */
 #PersonalToolbar {
-  padding-top: 3.5px !important;
+  padding-top: 1.5px !important;
   padding-bottom: 3.5px !important;    
 }
 
@@ -68,6 +68,8 @@
   fill: #F1F3F4 !important;
   color: #F1F3F4 !important;
   font-size: 11px !important;
+  margin-left: 1px !important;
+  margin-right: 2px !important;
 }
 
 /* compact bookmark menu dropdown menu */
@@ -133,4 +135,3 @@ menupopup[placespopup="true"]{
 
 #titlebar { margin-top: 0px !important; }
 
-/* #4D4D4D */

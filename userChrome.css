@@ -41,8 +41,20 @@
 
  /* tab size */
  .tabbrowser-tab {
-  max-width: 240px !important;
-  height: 34px !important;
+  max-width: 245px !important;
+  height: 31px !important;
+}
+
+/* Tab bar: text and icons  */
+.tab-text {
+  padding-left: 3px !important;
+  padding-bottom: 4px !important; 
+}
+.tab-icon-image  {  
+  margin-bottom: 3px !important;
+}
+.tab-throbber { 
+  margin-bottom: 3px !important;
 }
 
 /* active tab color */

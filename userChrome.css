@@ -57,12 +57,6 @@
   margin-bottom: 3px !important;
 }
 
-/* active tab color */
-.tab-background[selected="true"] {
-  background-color: #2B2A33 !important;
-  background-image: none !important;
-}
-
 /* tab toolbar blank space */
 .titlebar-spacer[type="pre-tabs"] {
   border-inline-end: 0px !important;
@@ -147,3 +141,11 @@ menupopup[placespopup="true"]{
 
 #titlebar { margin-top: 0px !important; }
 
+/* active tab  */
+.tabbrowser-tab[selected] .tab-content {
+  background-color: #2B2A33  !important; 
+  border-radius: 4.5px 4.5px 0px 0px !important;
+  margin-bottom: 4.5px !important;
+  margin-top: 4px !important;
+  border: 2px double #2B2A33 !important;
+}

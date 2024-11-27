@@ -42,19 +42,29 @@
  /* tab size */
  .tabbrowser-tab {
   max-width: 245px !important;
-  height: 31px !important;
+  height: 35px !important;
+  padding-top: 1px !important;
+}
+
+/* active tab  */
+.tabbrowser-tab[selected] .tab-content {
+  background-color: #2B2A33  !important; 
+  border-radius: 4.5px 4.5px 0px 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: 3px !important;
+  border: 2px double #2B2A33 !important;
 }
 
 /* Tab bar: text and icons  */
 .tab-text {
-  padding-left: 3px !important;
-  padding-bottom: 4px !important; 
+  padding-left: 3.5px !important;
+  padding-bottom: 1.5px !important; 
 }
 .tab-icon-image  {  
   margin-bottom: 3px !important;
 }
 .tab-throbber { 
-  margin-bottom: 3px !important;
+  margin-bottom: 0px !important;
 }
 
 /* tab toolbar blank space */
@@ -140,12 +150,3 @@ menupopup[placespopup="true"]{
 }
 
 #titlebar { margin-top: 0px !important; }
-
-/* active tab  */
-.tabbrowser-tab[selected] .tab-content {
-  background-color: #2B2A33  !important; 
-  border-radius: 4.5px 4.5px 0px 0px !important;
-  margin-bottom: 4.5px !important;
-  margin-top: 4px !important;
-  border: 2px double #2B2A33 !important;
-}
